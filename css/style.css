@@ -1323,6 +1323,7 @@ a {
 	line-height: 24px;	
 }
 
+
 .catalog .catalog-item .flag {
 	position: absolute;
 	top: 30px;
@@ -1349,18 +1350,36 @@ a {
 	margin: 0;
 }
 
+.catalog .catalog-item-image {
+	width: 360px;
+	height: 380px;
+}
+
 .catalog-item-nav {
 	position: absolute;
-	top: 39%;
-	left: 23%;	
+	top: 0;
+	left: 0;
 
-	width: 200px;		
+	width: 360px;
+	height: 380px;
+	padding-top: 170px;		
 
-	text-align: center;	
+	text-align: center;
+	
+	background-color: rgba(238, 238, 238, 0.7);
+	box-sizing: border-box;
+	opacity: 0;
+	cursor: pointer;	
+}
+
+.catalog-item-nav:hover {
+	opacity: 1.0;
 }
 
 .catalog-item-nav a {
 	display: block;
+	width: 200px;
+	margin: 0 auto;	
 }
 
 .catalog-item-nav a:last-child {
